@@ -1,0 +1,36 @@
+#include <iostream>
+using namespace std;
+int main()
+{
+int sum=0;
+for(int i=1; i<=5; i++)
+{
+int score;
+cout<<"Input your grade in subject "<<i<<": ";
+cin>>score;
+sum=sum+score;
+}
+double ave=sum/5.0;
+cout<<"Average Grade = "<<ave<<endl;
+if(ave<=74)
+cout<<"Equivalent Grade = 5.00"<<endl;
+else if(ave<=75)
+cout<<"Equivalent Grade = 3.00"<<endl;
+else if(ave<=78)
+cout<<"Equivalent Grade = 2.75"<<endl;
+else if(ave<=81)
+cout<<"Equivalent Grade = 2.50"<<endl;
+else if(ave<=84)
+cout<<"Equivalent Grade = 2.25"<<endl;
+else if(ave<=87)
+cout<<"Equivalent Grade = 2.00"<<endl;
+else if(ave<=90)
+cout<<"Equivalent Grade = 1.75"<<endl;
+else if(ave<=93)
+cout<<"Equivalent Grade = 1.50"<<endl;
+else if(ave<=96)
+cout<<"Equivalent Grade = 1.25"<<endl;
+else if(ave<=100)
+cout<<"Equivalent Grade = 1.00"<<endl;
+return 0;
+}
